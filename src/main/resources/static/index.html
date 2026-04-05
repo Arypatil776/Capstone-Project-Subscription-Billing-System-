@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Subscription System</h1>
+
+<div class="container">
+
+    <div class="box">
+        <h3>Create User</h3>
+        <input id="name" placeholder="Name">
+        <input id="email" placeholder="Email">
+        <button onclick="createUser()">Create</button>
+    </div>
+
+    <div class="box">
+        <h3>Create Plan</h3>
+        <input id="planName" placeholder="Plan Name">
+        <input id="price" placeholder="Price">
+        <input id="duration" placeholder="MONTHLY/YEARLY">
+        <button onclick="createPlan()">Create</button>
+    </div>
+
+    <div class="box">
+        <h3>Subscribe</h3>
+        <input id="userId" placeholder="User ID">
+        <input id="planId" placeholder="Plan ID">
+        <button onclick="subscribe()">Subscribe</button>
+    </div>
+
+</div>
+
+<!-- Bottom Section -->
+<div class="box bottom-box">
+    <h3>View Users</h3>
+    <button onclick="getUsers()">Load</button>
+    <pre id="output"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
